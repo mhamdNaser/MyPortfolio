@@ -1,0 +1,190 @@
+/* animation ------  */
+@keyframes left{
+    from{
+        margin-left: -10%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+@keyframes leftdown{
+    from{
+        margin-left: -10%;
+        margin-top: 3%;
+    }
+    to{
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+}
+@keyframes right{
+    from{
+        margin-left: 10%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+/* style protfolio  ----------*/
+main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+/* left sidebar */
+.page-left{
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    border-right: 8px solid rgb(87, 99, 55);
+    background-color: rgb(207, 203, 201);
+}
+.icon-style i{
+    animation: left 2s;
+    font-size: 30px;
+    color: rgb(87, 99, 55);
+    padding: 3%;
+}
+
+.icon-style i:hover{ color: rgb(1, 63, 78);}
+
+.logo-page{
+    width: 50%;
+    animation: left 2s;
+}
+
+.my-name{
+    animation: left 2s;
+    width: 60%;
+    color: rgb(1, 63, 78);
+}
+
+.list{
+    animation: left 2s;
+    line-height: 100%;
+    padding: 20%;
+    margin: 0 auto;
+}
+
+.list a:first-of-type{
+    padding-top: 10%;
+    border-top: 2px solid rgb(87, 99, 55);
+}
+
+.list a{
+    display: block;
+    padding: 7%;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(87, 99, 55);
+}
+
+.list a:hover{ color: rgb(1, 63, 78);}
+
+/* right page & contant ---- */
+.page-right{
+    position: absolute;
+    right: 0;
+    width: 70%;
+    padding-top: 14%;
+    background-color: rgb(0, 113, 143);
+}
+
+#home{
+    display: flex;
+    flex-direction: row;
+}
+
+.my-work{
+    flex: 50%;
+}
+
+.home-page{
+    flex: 50%;
+    animation: right 2s 2ms;
+    margin-top: 12%;
+}
+
+.my-photo{
+    animation: leftdown 2s 2ms;
+}
+
+
+.home-page p{
+    color: rgb(207, 203, 201);
+    font-weight: 400;
+}
+
+.home-page h1{
+    color: rgb(87, 99, 55);
+    margin-bottom: 5%;
+    font-size: 450%;
+    text-shadow: 2px 2px rgba(207, 203, 201, 0.4);
+}
+
+.about-us h2{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.bjective{
+    margin-top: 20%;
+}
+
+.bjective h2{
+    display: inline-block;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-top: 20%;
+    padding: 2%;
+}
+
+/* page Responsive ---------- */ 
+@media only screen and (max-width: 1324px){
+
+    .page-left{
+        grid-column: 1 / 3;
+        position: relative;
+        width: 100%;
+    }
+
+    .list a{
+        padding: 7%;
+    }
+
+    .page-right{
+        grid-column: 1 / 3;
+        position: relative;
+        width: 100%;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    .home-page h1{
+        font-size: 280%;
+        text-shadow: 1px 1px rgba(207, 203, 201, 0.4);
+    }
+    
+}
+
+@media only screen and (max-width: 280px){
+
+    .list{
+        padding: 50%;
+    }
+    
+    .list a{
+        padding: 5%;
+        font-size: large;
+    }
+
+
+    .home-page h1{
+        font-size: 150%;
+    }
+    
+}

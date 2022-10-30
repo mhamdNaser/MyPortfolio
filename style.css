@@ -25,23 +25,41 @@
         margin-left: 0%;
     }
 }
-
+@keyframes top{
+    from{
+        margin-top: -10%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
 /* style protfolio  ----------*/
 main{
     display: grid;
     grid-template-columns: 25% 75%;
 }
 
+.style{
+    visibility: visible;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 210px;
+    height: 70px;
+    width: 320px;
+    background-color: rgb(207, 203, 201);
+}
+
 /* left sidebar */
 .page-left{
+    z-index: 1;
     position: fixed;
-    width: 30%;
+    width: 25%;
     height: 100%;
-    border-right: 8px solid rgb(87, 99, 55);
     background-color: rgb(207, 203, 201);
 }
 .icon-style i{
-    margin-top: 10%;
+    margin-top: 8%;
     animation: left 2s;
     font-size: 30px;
     color: rgb(87, 99, 55);
@@ -51,49 +69,53 @@ main{
 .icon-style i:hover{ color: rgb(1, 63, 78);}
 
 .logo-page{
-    width: 50%;
+    width: 70%;
     animation: left 2s;
 }
 
 .my-name{
     animation: left 2s;
-    width: 60%;
     color: rgb(1, 63, 78);
 }
 
 .list{
     animation: left 2s;
     line-height: 100%;
-    padding: 20%;
+    padding: 13%;
     margin: 0 auto;
 }
 
-.list a:first-of-type{
-    padding-top: 10%;
-    border-top: 2px solid rgb(87, 99, 55);
-}
+.list a:hover{ color: rgb(1, 63, 78);font-weight: bolder;}
 
-.list a{
+.list-pc{
     display: block;
-    padding: 7%;
+    padding: 4%;
     font-size: larger;
-    font-weight: bolder;
     text-decoration: none;
     color: rgb(87, 99, 55);
 }
 
-.list a:hover{ color: rgb(1, 63, 78);}
+.list-mobile{
+    visibility: hidden;
+}
+
+.footer{
+    margin: 7% auto;
+    text-align: center;
+    width: 80%;
+    border-top: 1px solid rgba(87, 99, 55,0.3);
+}
 
 /* right page & contant ---- */
 .page-right{
     position: absolute;
     right: 0;
-    width: 70%;
+    width: 75%;
     padding-top: 14%;
     background-color: rgb(0, 113, 143);
 }
 
-#home{
+.home{
     display: flex;
     flex-direction: row;
 }
@@ -105,7 +127,7 @@ main{
 .home-page{
     flex: 50%;
     animation: right 2s 2ms;
-    margin-top: 12%;
+    margin-top: 13%;
 }
 
 .my-photo{
@@ -120,21 +142,21 @@ main{
 .home-page h1{
     color: rgb(87, 99, 55);
     margin-bottom: 5%;
-    font-size: 450%;
+    font-size: 320%;
     text-shadow: 2px 2px rgba(207, 203, 201, 0.4);
 }
 
-.bjective{
+.content{
     margin-top: 20%;
-    color: white;
+    color: rgb(207, 203, 201);
 }
 
-.obj-content  h2{
+.content  h2{
     font-size: 260%;
     display: inline-block;
     margin-bottom: 3%;
+    margin-left: 1%;
     color: rgb(87, 99, 55);
-    border-bottom: 4px solid rgb(87, 99, 55);
 
 }
 
@@ -148,22 +170,105 @@ main{
     width: 25%;
 }
 
+.fram-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.fram-box iframe{
+    width: 100%;
+    height: 18em;
+}
+
+.skills{
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20%;
+}
+
+.skills h2{
+    padding-left: 5%;
+}
+
+ul li{
+    list-style: none;
+}
+
+.icon{
+    width: 40%;
+    padding: 3%;
+    margin: 0 auto;
+}
+
+.icon img{
+    padding: 3%;
+    width: 22%;
+}
+
+.footer-mobile{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1300px){
+
+    .style{
+        visibility: hidden;
+    }
+    
+}
+
 /* page Responsive ---------- */ 
-@media only screen and (max-width: 1324px){
+@media only screen and (max-width: 1034px){
+
+    .style{
+        visibility: hidden;
+    }
+
+    .icon-style i{
+        margin-top: 0;
+        font-size: 24px;
+        padding: 1%;
+    }
+
+    .logo-page{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
 
     .page-left{
         grid-column: 1 / 3;
-        position: relative;
+        position: fixed;
+        height: 22%;
         width: 100%;
     }
 
-    .list a{
-        padding: 7%;
+    .list{
+        display: inline;
+    }
+
+    .list-pc{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .list-mobile{
+        visibility: visible;
+    }
+
+    .footer{
+        margin: 0 auto;
     }
 
     .page-right{
         grid-column: 1 / 3;
         position: relative;
+        margin-top: 18%;
         width: 100%;
     }
 
@@ -175,10 +280,30 @@ main{
         font-size: 280%;
         text-shadow: 1px 1px rgba(207, 203, 201, 0.4);
     }
+
+    .skills{
+        flex-direction: column;
+    }
+
+    .footer-mobile{
+        text-align: center;
+        color: rgb(207, 203, 201);
+        visibility: visible;
+    }
     
 }
 
-@media only screen and (max-width: 280px){
+@media only screen and (max-width: 500px){
+    .content{
+        margin-top: 40%;
+    }
+
+    .page-right{
+        grid-column: 1 / 3;
+        position: relative;
+        margin-top: 30%;
+        width: 100%;
+    }
 
     .list{
         padding: 50%;
@@ -193,5 +318,4 @@ main{
     .home-page h1{
         font-size: 150%;
     }
-    
 }

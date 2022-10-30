@@ -11,6 +11,7 @@
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- page icon and title -->
         <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
@@ -18,73 +19,141 @@
     </head>
 <body>
     <main>
+        <div class="style"></div>
         <div class="page-left">
             <div class="container text-center mt-3">
                 <div class="container icon-style">
-                    <a href="https://github.com/mhamdNaser"><i class="fa fa-github-square"></i></a>
-                    <a href="https://www.linkedin.com/in/muhammed-naser-edden/"><i class="fa fa-linkedin-square"></i></a>
-                    <a href="https://twitter.com/MhamdNaserEdden"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://github.com/mhamdNaser" target="_blank"><i class="fa fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammed-naser-edden/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://twitter.com/MhamdNaserEdden" target="_blank"><i class="fa fa-twitter-square"></i></a>
                 </div>
                 <div>
-                    <img class="img-fluid logo-page" src="./image/logo.png" alt="my logo">
+                    <img class="img-fluid logo-page" src="./image/logo1.png" alt="my logo">
                 </div>
-                <div class="container mt-1 p-2 my-name"><h2>Muhammed Nasser Edden</h2></div>
-                <div class="container ps-5 pe-5">
-                    <div class="container list pt-2 text-center">
-                        <a href="#home">Home</a>
-                        <a href="#Objective">Objective</a>
-                        <a href="#Education">Education</a>
-                        <a href="#Project">Project</a>
-                        <a href="#Experience">Experience</a>
+                <div class="container">
+                    <div class="container list text-center">
+                        <a class="list-pc" href="./index.html">Home</a>
+                        <a class="list-pc" href="#Objective">Objective</a>
+                        <a class="list-pc" href="#Education">Education</a>
+                        <a class="list-pc" href="#Project">Project</a>
+                        <a class="list-pc" href="#Experience">Experience</a>
+                        <div class="dropdown list-mobile">
+                            <button type="button" class="btn btn-secodary dropdown-toggle" data-bs-toggle="dropdown">
+                                Pages
+                            </button>
+                            <ul class="dropdown-menu bg-light text-center">
+                                <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="#Objective">Objective</a></li>
+                                <li><a class="dropdown-item" href="#Education">Education</a></li>
+                                <li><a class="dropdown-item" href="#Project">Project</a></li>
+                                <li><a class="dropdown-item" href="#Experience">Experience</a></li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="footer">
+                    <p>Phone : +962-776830893 <br>mhamd.naser.edden@gmail.com</p>
                 </div>
             </div>
         </div>
         <div class="page-right">
-            <div  id="home" class="container me-5">
+            <div  id="home" class="container me-5 home">
                 <div class="container my-work">
-                    <img src="./image/muhammed.png" class="img-fluid rounded-top my-photo" alt="">
+                    <img src="./image/mhamd.png" class="img-fluid my-photo" alt="">
                 </div>
                 <div class="container text-white home-page">
-                    <h1>Full Stack <br> Web Developer</h1>
-                    <p>Website interface design, programming and development</p>
-                    <p>Phone : +962-776830893 <br>mhamd.naser.edden@gmail.com</p>
+                    <h1>Muhammed Nasser Edden</h1>
+                    <p> <strong> Stack Web Developer </strong><br> interface design, programming and development</p>
                 </div>
             </div><br><br>
-            <div  id="Objective" class="container bjective">
-                <div class="container mt-3 obj-content">
-                    <h2>About me</h2>
-                    <p>My great passion in the field of information technology made me seek to complete in the field of artificial intelligence <br>
-                        I worked for two years as a freelancer in the field of web design, Front End <br>
-                        And when the Orange Academy opened the door for registration, I applied in the first batch, but I didn't get a chance <br>
-                        Now I am a member of the Orange Programming Academy family and the Simplon family
-                    </p>
+            <div  id="Objective" class="container home">
+                <div class="container content">
+                    <div class="container p-2">
+                        <h2>Objective</h2>
+                    </div>
+                    <div class="ps-3">
+                        <p>I started working as a graphic designer and reached an acceptable level in it, but my tendency was to programming the 
+                            web and its applications <br>
+                            I worked for two years as a Front End designer on my own platform, which I called Donetto <br><br>
+                            Now I have experience as a full stack web developer <br>
+                            <br><br>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div  id="Education" class="container me-5 p-2">
-                <div class="container mt-3 edu-photo">
-                    <img class="rounded-circle" src="./image/aut.jpg" alt="">
-                    <img class="rounded-circle" src="./image/Coding-Academy.jpg" alt="">
-                </div>
-                <div class="container mt-3 obj-content">
-                    <h2>About me</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            <div  id="Education" class="container home">
+                <div class="container content">
+                    <div class="container p-2">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="ps-3">
+                        <p>My great passion in the field of information technology made me seek to complete my study in the field of 
+                            artificial intelligence <br><br>
+                            And when the Orange Academy opened the door for registration, I applied in the first batch, but I didn't get a chance
+                            Now I am a member of the Orange Programming Academy family and the Simplon family </p>
+                    </div>
+                    <div class="container edu-photo">
+                        <img class="img-fluid" src="./image/aut.jpg" alt="">
+                        <img class="img-fluid" src="./image/Coding-Academy.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <div  id="Project" class="content me-5">
-                <div class="container-fluid edu-photo">
-                    <img src="./image/muhammed.png" alt="">
-                    <img src="./image/muhammed.png" alt="">
-                    <img src="./image/muhammed.png" alt="">
+            <div  id="Project" class="container home">
+                <div class="container content">
+                    <div class="container p-3">
+                        <h2>Project</h2>
+                        <p>Here is my first project</p>
+                    </div>
+                    <div class="container-fluid fram-box">
+                        <iframe src="./html_css/index.html" frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
-            <div  id="Experience" class="content me-5">
-                <div class="container m-3 p-5 text-white">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text <br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text <br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                    </p>
+            <div  id="Experience" class="container home">
+                <div class="container content">
+                    <div class="container p-3">
+                        <h2>My Skills</h2>
+                    </div>
+                    <div class="skills">
+                        <ul>
+                        <h3>Soft Skills</h3>
+                        <li>Communication skill</li>
+                        <li>Driving skill</li>
+                            <li>Teamwork skill</li>
+                            <li>Flexibility and adaptability to changes</li>
+                            <li>Time management skill</li>
+                            <li>Problem solving skill</li>
+                        </ul>
+                        <ul>
+                            <h3>Software Skills</h3>
+                            <li>HTML</li>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Success striped example" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <li>CSS</li>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Success striped example" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <li>SASS</li>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Success striped example" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <li>BOOTSTRAP</li>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Success striped example" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <img src="./image/html.png" alt="html icon">
+                        <img src="./image/css.png" alt="css icon">
+                        <img src="./image/sass.png" alt="sass icon">
+                        <img src="./image/boot.png" alt="boot icon">
+                    </div>
                 </div>
+            </div>
+            <div class="footer-mobile">
+                <p>Phone : +962-776830893 <br>mhamd.naser.edden@gmail.com</p>
             </div>
         </div>
     </main>

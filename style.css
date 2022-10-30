@@ -201,6 +201,7 @@ ul li{
     width: 40%;
     padding: 3%;
     margin: 0 auto;
+    opacity: 0.1;
 }
 
 .icon img{

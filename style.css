@@ -41,6 +41,7 @@ main{
     background-color: rgb(207, 203, 201);
 }
 .icon-style i{
+    margin-top: 10%;
     animation: left 2s;
     font-size: 30px;
     color: rgb(87, 99, 55);
@@ -111,7 +112,6 @@ main{
     animation: leftdown 2s 2ms;
 }
 
-
 .home-page p{
     color: rgb(207, 203, 201);
     font-weight: 400;
@@ -124,21 +124,28 @@ main{
     text-shadow: 2px 2px rgba(207, 203, 201, 0.4);
 }
 
-.about-us h2{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-}
-
 .bjective{
     margin-top: 20%;
+    color: white;
 }
 
-.bjective h2{
+.obj-content  h2{
+    font-size: 260%;
     display: inline-block;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-    margin-top: 20%;
-    padding: 2%;
+    margin-bottom: 3%;
+    color: rgb(87, 99, 55);
+    border-bottom: 4px solid rgb(87, 99, 55);
+
+}
+
+.edu-photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.edu-photo img{
+    width: 25%;
 }
 
 /* page Responsive ---------- */ 

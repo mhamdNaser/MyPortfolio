@@ -173,12 +173,13 @@ main{
 .fram-box{
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .fram-box iframe{
     width: 100%;
     height: 18em;
+    border: 3px groove rgb(22, 25, 40);
 }
 
 .skills{

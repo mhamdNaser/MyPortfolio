@@ -47,7 +47,7 @@ main{
     top: 210px;
     height: 70px;
     width: 320px;
-    background-color: rgb(207, 203, 201);
+    background-color: rgb(22, 25, 40);
 }
 
 /* left sidebar */
@@ -56,17 +56,17 @@ main{
     position: fixed;
     width: 25%;
     height: 100%;
-    background-color: rgb(207, 203, 201);
+    background-color: rgb(22, 25, 40);
 }
 .icon-style i{
     margin-top: 8%;
     animation: left 2s;
     font-size: 30px;
-    color: rgb(87, 99, 55);
+    color: rgb(217,216,211);
     padding: 3%;
 }
 
-.icon-style i:hover{ color: rgb(1, 63, 78);}
+.icon-style i:hover{ color: white; font-weight: bolder;}
 
 .logo-page{
     width: 70%;
@@ -75,7 +75,7 @@ main{
 
 .my-name{
     animation: left 2s;
-    color: rgb(1, 63, 78);
+    color: rgb(217,216,211);
 }
 
 .list{
@@ -85,14 +85,14 @@ main{
     margin: 0 auto;
 }
 
-.list a:hover{ color: rgb(1, 63, 78);font-weight: bolder;}
+.list a:hover{ color: white;font-weight: bolder;}
 
 .list-pc{
     display: block;
     padding: 4%;
     font-size: larger;
     text-decoration: none;
-    color: rgb(87, 99, 55);
+    color: rgb(217,216,211);
 }
 
 .list-mobile{
@@ -103,7 +103,8 @@ main{
     margin: 7% auto;
     text-align: center;
     width: 80%;
-    border-top: 1px solid rgba(87, 99, 55,0.3);
+    color: rgb(217,216,211);
+    border-top: 1px solid rgba(217,216,211);
 }
 
 /* right page & contant ---- */
@@ -112,7 +113,7 @@ main{
     right: 0;
     width: 75%;
     padding-top: 14%;
-    background-color: rgb(0, 113, 143);
+    background-color: rgb(217,216,211);
 }
 
 .home{
@@ -135,20 +136,19 @@ main{
 }
 
 .home-page p{
-    color: rgb(207, 203, 201);
+    color: rgb(22, 25, 40);
     font-weight: 400;
 }
 
 .home-page h1{
-    color: rgb(87, 99, 55);
+    color: rgb(22, 25, 40);
     margin-bottom: 5%;
     font-size: 320%;
-    text-shadow: 2px 2px rgba(207, 203, 201, 0.4);
 }
 
 .content{
     margin-top: 20%;
-    color: rgb(207, 203, 201);
+    color: rgb(22, 25, 40);
 }
 
 .content  h2{
@@ -156,7 +156,7 @@ main{
     display: inline-block;
     margin-bottom: 3%;
     margin-left: 1%;
-    color: rgb(87, 99, 55);
+    color: rgb(22, 25, 40);
 
 }
 
@@ -257,9 +257,18 @@ ul li{
         display: none;
         visibility: hidden;
     }
+
+    .content{
+        margin-top: 35%;
+    }
     
     .list-mobile{
+        color: rgb(217,216,211);
         visibility: visible;
+    }
+
+    .list-mobile button{
+        color: rgb(217,216,211);
     }
 
     .footer{
@@ -279,7 +288,7 @@ ul li{
 
     .home-page h1{
         font-size: 280%;
-        text-shadow: 1px 1px rgba(207, 203, 201, 0.4);
+        text-shadow: 1px 1px rgba(22, 25, 40, 0.4);
     }
 
     .skills{
@@ -288,7 +297,7 @@ ul li{
 
     .footer-mobile{
         text-align: center;
-        color: rgb(207, 203, 201);
+        color: rgb(22, 25, 40);
         visibility: visible;
     }
     
@@ -296,7 +305,7 @@ ul li{
 
 @media only screen and (max-width: 500px){
     .content{
-        margin-top: 40%;
+        margin-top: 45%;
     }
 
     .page-right{

@@ -121,6 +121,7 @@ main{
     background-color: rgb(217,216,211);
 }
 
+/* home page ---- */
 .home{
     display: flex;
     flex-direction: row;
@@ -152,6 +153,8 @@ main{
     font-family: 'Lobster', cursive;
 }
 
+
+/* text content in all page ---- */
 .content{
     margin-top: 20%;
     color: rgb(22, 25, 40);
@@ -166,6 +169,7 @@ main{
 
 }
 
+/* education page ---- */
 .edu-photo{
     display: flex;
     flex-direction: row;
@@ -176,6 +180,7 @@ main{
     width: 25%;
 }
 
+/* project page ---- */
 .fram-box{
     display: flex;
     flex-direction: row;
@@ -195,6 +200,8 @@ iframe a{
     color: rgb(217,216,211);
     text-decoration: none;
 }
+
+/* Experience ---- */
 .skills{
     margin-bottom: 6%;
     display: flex;
@@ -227,6 +234,8 @@ ul li{
     visibility: hidden;
 }
 
+/* ---------- page Responsive ---------- */ 
+
 @media only screen and (max-width: 1300px){
 
     .style{
@@ -235,7 +244,6 @@ ul li{
     
 }
 
-/* page Responsive ---------- */ 
 @media only screen and (max-width: 1034px){
 
     .style{

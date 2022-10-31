@@ -34,6 +34,11 @@
     }
 }
 /* style protfolio  ----------*/
+
+*{
+    box-sizing: border-box;
+}
+
 main{
     display: grid;
     grid-template-columns: 25% 75%;
@@ -143,7 +148,8 @@ main{
 .home-page h1{
     color: rgb(22, 25, 40);
     margin-bottom: 5%;
-    font-size: 320%;
+    font-size: 360%;
+    font-family: 'Lobster', cursive;
 }
 
 .content{
@@ -202,7 +208,7 @@ ul li{
     width: 40%;
     padding: 3%;
     margin: 0 auto;
-    opacity: 0.1;
+    opacity: 0.4;
 }
 
 .icon img{

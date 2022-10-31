@@ -183,11 +183,18 @@ main{
 }
 
 .fram-box iframe{
-    width: 100%;
+    width: 40%;
     height: 18em;
     border: 3px groove rgb(22, 25, 40);
 }
 
+iframe a{
+    margin: 0 auto;
+    padding: 2%;
+    background-color: rgb(22, 25, 40);
+    color: rgb(217,216,211);
+    text-decoration: none;
+}
 .skills{
     margin-bottom: 6%;
     display: flex;

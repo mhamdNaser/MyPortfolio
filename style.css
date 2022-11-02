@@ -63,7 +63,7 @@ main{
 .icon-style i:hover{ color: white; font-weight: bolder;}
 
 .logo-page{
-    padding-top: 20%;
+    padding-top: 23%;
     width: 50%;
     animation: left 2s;
 }
@@ -95,7 +95,7 @@ main{
 }
 
 .footer{
-    margin: 7% auto;
+    margin: 10% auto;
     text-align: center;
     width: 80%;
     color: rgb(217,216,211);

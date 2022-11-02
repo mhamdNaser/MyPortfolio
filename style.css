@@ -44,17 +44,6 @@ main{
     grid-template-columns: 25% 75%;
 }
 
-.style{
-    visibility: visible;
-    position: fixed;
-    z-index: 2;
-    right: 0;
-    top: 210px;
-    height: 70px;
-    width: 320px;
-    background-color: rgb(22, 25, 40);
-}
-
 /* left sidebar */
 .page-left{
     z-index: 1;
@@ -74,7 +63,8 @@ main{
 .icon-style i:hover{ color: white; font-weight: bolder;}
 
 .logo-page{
-    width: 70%;
+    padding-top: 20%;
+    width: 50%;
     animation: left 2s;
 }
 
@@ -117,7 +107,7 @@ main{
     position: absolute;
     right: 0;
     width: 75%;
-    padding-top: 14%;
+    padding-top: 8%;
     background-color: rgb(217,216,211);
 }
 
@@ -134,7 +124,7 @@ main{
 .home-page{
     flex: 50%;
     animation: right 2s 2ms;
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
 .my-photo{
@@ -156,7 +146,7 @@ main{
 
 /* text content in all page ---- */
 .content{
-    margin-top: 20%;
+    margin-top: 6%;
     color: rgb(22, 25, 40);
 }
 
@@ -174,31 +164,44 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .edu-photo img{
-    width: 25%;
+    margin: 0 auto;
+    width: 100%;
+    height: 80%;
 }
+
+.card {
+    background-color: rgb(22, 25, 40) !important;
+    color: rgb(217,216,211);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container-text{
+    padding: 2%;
+  }
+
+  .container-text a{
+    color: rgb(217,216,211);
+    text-decoration: none;
+  }
 
 /* project page ---- */
 .fram-box{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.fram-box iframe{
-    width: 40%;
-    height: 18em;
-    border: 3px groove rgb(22, 25, 40);
-}
-
-iframe a{
-    margin: 0 auto;
-    padding: 2%;
-    background-color: rgb(22, 25, 40);
-    color: rgb(217,216,211);
-    text-decoration: none;
+    flex-wrap: wrap;
 }
 
 /* Experience ---- */
@@ -245,15 +248,11 @@ ul li{
 }
 
 @media only screen and (max-width: 1034px){
-
-    .style{
-        visibility: hidden;
-    }
-
     .icon-style i{
         margin-top: 0;
         font-size: 24px;
         padding: 1%;
+        color: rgb(22, 25, 40);
     }
 
     .logo-page{

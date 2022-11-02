@@ -210,11 +210,14 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 20%;
 }
 
 .skills h2{
     padding-left: 5%;
+}
+
+ul{
+    flex: 50%;
 }
 
 ul li{
@@ -222,15 +225,14 @@ ul li{
 }
 
 .icon{
-    width: 40%;
-    padding: 3%;
+    width: 100%;
     margin: 0 auto;
     opacity: 0.4;
 }
 
 .icon img{
-    padding: 3%;
-    width: 22%;
+    width: 8%;
+    padding: 0% 1% 0% 0%;
 }
 
 .footer-mobile{

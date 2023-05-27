@@ -1239,6 +1239,7 @@ contact
 .phone-info span i {
   color: #ff3b2c;
   line-height: 22px;
+  margin-right: 10px;
 }
 
 .form-social{
@@ -1502,5 +1503,29 @@ responsive
   .phone-info span i {
     text-align: center;
     display: block;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  
+  .my-certificates .hidden-content h4 {
+    font-size: 12px ;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .my-certificates .hidden-content p {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .header-area .main-nav .logo h4 {
+    font-size: 12px;
+  }
+
+  .main-banner .left-content h2 {
+    line-height: 48px;
+    font-size: 28px;
   }
 }

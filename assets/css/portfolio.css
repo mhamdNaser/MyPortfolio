@@ -127,6 +127,22 @@ img {
   overflow: hidden;
 }
 
+.backtop{
+  background-color: #fe3f40;
+  position: fixed;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  bottom: 40px;
+  right: 60px;
+  height: 40px;
+  width: 40px;
+}
+
+.backtop a{
+  color: #fff;
+}
+
 /* 
 ---------------------------------------------
 global styles
@@ -918,7 +934,8 @@ education Us Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 140px 0px 120px 0px;
+  background-position: center;
+  padding: 160px 0px 180px 0px;
 }
 
 .education-me .left-image {
@@ -958,7 +975,7 @@ skills Style
 
 .my-skills {
   margin-top: 0px;
-  padding-top: 120px;
+  padding-top: 160px;
 }
 
 .my-skills .left-image {
@@ -967,6 +984,7 @@ skills Style
 
 .my-skills .section-heading h2 {
   margin-right: 100px;
+  margin-bottom: 30px;
 }
 
 .my-skills .section-heading p {
@@ -993,6 +1011,70 @@ skills Style
   font-weight: 700;
   color: #fe3f40;
   margin-bottom: 14px;
+}
+
+.my-skills .progress-skill-bar {
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.my-skills .progress-skill-bar span {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #03a4ed;
+}
+
+.my-skills .first-bar span {
+  left: 80%;
+}
+
+.my-skills .second-bar span {
+  left: 60%;
+}
+
+.my-skills .third-bar span {
+  left: 60%;
+}
+
+.my-skills .progress-skill-bar h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 14px;
+}
+
+.my-skills .progress-skill-bar .full-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f7eff1;
+  position: relative;
+  z-index: 1;
+}
+
+.my-skills .progress-skill-bar .filled-bar {
+  background: rgb(255,77,30);
+  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 2;
+}
+
+.my-skills .first-bar .filled-bar {
+  width: 80%;
+}
+
+.my-skills .second-bar .filled-bar {
+  width: 60%;
+}
+
+.my-skills .third-bar .filled-bar {
+  width: 60%;
 }
 
 
@@ -1096,8 +1178,8 @@ certificates
 
 .my-project {
   position: relative;
-  margin-top: 80px;
-  padding-top: 120px;
+  margin-bottom: 180px;
+  padding-top: 180px;
 }
 
 .my-project .section-heading h2 {
@@ -1242,27 +1324,6 @@ contact
   margin-right: 10px;
 }
 
-.form-social{
-  display: inline-block;
-}
-
-.form-social a i {
-  width: 42px;
-  height: 42px;
-  text-align: center;
-  line-height: 42px;
-  background-color: #03a4ed;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 16px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.form-social a i:hover {
-  color: #ff3b2c;
-}
-
 form#contact .contact-dec {
   position: absolute;
   right: -166px;
@@ -1349,11 +1410,23 @@ Footer Style
 
 footer p {
   text-align: center;
-  margin: 30px 0px 45px 0px;
+  margin: 15px 0px 20px 0px;
+}
+
+.footer-icon a{
+  display: inline;
+  margin: 5px 10px 5px 10px;
+  font-size: 18px;
+  color: #afafaf;
 }
 
 footer p a {
   color: #fe3f40;
+}
+
+.footer-icon a:hover{
+  color: #191a20;
+  font-weight: bolder;
 }
 
 /* 
@@ -1369,6 +1442,9 @@ responsive
 }
 
 @media (max-width: 992px) {
+  .backtop{
+    display: none;
+  }
   .main-banner {
     padding-top: 196px;
   }
@@ -1414,6 +1490,7 @@ responsive
   }
   .my-skills {
     margin-top: 200px;
+    padding-top: 120px;
   }
   .my-skills .left-image {
     margin-right: 0px;
@@ -1421,7 +1498,9 @@ responsive
   }
   .my-skills .section-heading h2,
   .my-skills .section-heading p {
+    font-size: 18px;
     margin-right: 0px;
+    margin-bottom: 30px;
     text-align: center;
   }
   .my-certificates .section-heading h2 {
@@ -1473,8 +1552,27 @@ responsive
 }
 
 @media (max-width: 767px) {
+  .backtop{
+    display: none;
+  }
+  .education-me{
+    padding-top: 120px;
+  }
   .education-me .left-image {
-    bottom: -280px;
+    bottom: -240px;
+  }
+  .education-me .services .item p {
+    color: #fff;
+    font-size: 12px;
+  }
+  .my-skills .progress-skill-bar{
+    padding: 0px 15px 0px 15px;
+  }
+  .my-skills .progress-skill-bar span {
+    font-size: 12px;
+  }
+  .my-skills .progress-skill-bar h4 {
+    font-size: 14px;
   }
   .my-project .right-list {
     margin-left: 0px;
@@ -1507,6 +1605,9 @@ responsive
     margin-bottom: 10px;
   }
 
+  .my-certificates .section-heading h2 {
+    font-size: 18px;
+  }
   
   .my-certificates .hidden-content h4 {
     font-size: 12px ;
